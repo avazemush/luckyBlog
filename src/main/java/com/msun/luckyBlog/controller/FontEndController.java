@@ -113,7 +113,7 @@ public class FontEndController {
         boolean result = infoSer.login(user);
         if (result) {
             infoSer.addSession(request, user);
-            return "redirect:/admin";
+            return "redirect:/admin/";
         } else {
             return "redirect:/login?result=fail";
         }
